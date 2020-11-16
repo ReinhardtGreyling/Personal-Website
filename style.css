@@ -1,3 +1,4 @@
+/* For desktop: */
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Shadows+Into+Light+Two");
 * {
     box-sizing: border-box;
@@ -54,7 +55,31 @@ body {
     margin: 0;
 }
 .wrapper .parallax-container .parallax span {
-    font-family: "Shadows Into Light Two", cursive;
+    font-family: "sans-serif", cursive;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
+        .wrapper .parallax-container .parallax h1 {
+            font-size: 3.5rem;
+            letter-spacing: 0.1rem;
+            line-height: 4rem;
+        }
+
+        .wrapper .parallax-container .parallax h2 {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            line-height: 2rem;
+        }
+
+        .wrapper .parallax-container .parallax span {
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1rem;
+            font-weight: normal;
+        }
+    }
 }
